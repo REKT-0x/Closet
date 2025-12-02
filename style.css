@@ -1,0 +1,105 @@
+/* Base styles */
+body {
+    font-family: 'Inter', sans-serif;
+    /* Uses the generated site_background.jpg pattern */
+    background-color: #3f51b5; /* Fallback: Deep Blue */
+    background-image: url('site_background.jpg');
+    background-repeat: repeat;
+    color: #f3f4f6; /* Light gray text for contrast */
+}
+
+/* Main Container Card Styling */
+.container-card {
+    /* Semi-transparent dark card that sits on top of the pattern */
+    background-color: rgba(30, 41, 59, 0.95);
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.5); 
+    transition: all 0.3s ease;
+    border: 2px solid #cddc39; /* Lime green border accent */
+}
+
+/* Heading color - using the lime green accent */
+h1 {
+    color: #cddc39;
+}
+
+/* Label text color update */
+label {
+    color: #cddc39; /* Lime green for labels */
+}
+
+/* File Input Styling (Customized for appearance) */
+.file-input {
+    width: 100%;
+    border: 1px solid #6b7280;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    background-color: #374151; 
+    color: #f3f4f6;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+.file-input:hover {
+    border-color: #cddc39; /* Lime green hover state */
+}
+
+/* Select Dropdown Styling */
+.select-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #6b7280;
+    border-radius: 0.5rem;
+    background-color: #374151;
+    color: #f3f4f6;
+    appearance: none;
+    /* Custom SVG for dark theme arrow */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23C0C0C0'%3E%3Cpath fill-rule='evenodd' d='M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.25 4.25a.75.75 0 01-1.06 0L5.21 8.27a.75.75 0 01.02-1.06z' clip-rule='evenodd' /%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1.5em 1.5em;
+    transition: border-color 0.2s;
+}
+.select-input:focus {
+    border-color: #cddc39; /* Lime green focus */
+}
+
+/* Canvas Styling */
+#compositor-canvas {
+    border: 3px dashed #cddc39; /* Lime green dashed border */
+    background-color: #f3f4f6; /* Canvas inner background remains light for contrast */
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+}
+
+/* Download Button Styling - REMOVED (kept comments for reference)
+.download-button {
+    ...
+}
+.download-button:hover:not(:disabled) {
+    ...
+}
+.download-button:disabled {
+    ...
+}
+*/
+
+/* Message Box Styling - Updated for Dark Theme Contrast */
+.message-box {
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-weight: 500;
+}
+.message-box.error {
+    background-color: #4a1919; 
+    color: #fca5a5; 
+}
+.message-box.info {
+    background-color: #1e3a8a; 
+    color: #93c5fd; 
+}
+.message-box.success {
+    background-color: #065f46; 
+    color: #a7f3d0; 
+}
+
