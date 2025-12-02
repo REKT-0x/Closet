@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le-Closet NFT Compositor</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="p-4 sm:p-8 min-h-screen flex items-center justify-center">
+
+    <div class="container-card w-full max-w-lg p-6 sm:p-8 rounded-xl space-y-6">
+        <!-- Site name updated to Le-Closet -->
+        <h1 class="text-3xl font-extrabold text-lime-400 text-center">Le-Closet NFT Compositor</h1>
+        <p class="text-gray-200 text-center">
+            Upload your NFT image (PNG with transparent background recommended) and select a Christmas theme.
+        </p>
+
+        <!-- 1. NFT Image Upload -->
+        <div>
+            <label for="nft-upload" class="block text-sm font-medium text-lime-400 mb-2">Upload NFT Image</label>
+            <input type="file" id="nft-upload" accept="image/*" class="file-input">
+        </div>
+
+        <!-- 2. Background Selection -->
+        <div>
+            <label for="bg-select" class="block text-sm font-medium text-lime-400 mb-2">Select Christmas Background</label>
+            <select id="bg-select" class="select-input">
+                <option value="">-- Choose a Background --</option>
+                <!-- Options will be populated by JavaScript -->
+            </select>
+        </div>
+
+        <!-- Message Box -->
+        <div id="message-box" class="hidden message-box" role="alert"></div>
+
+        <!-- 3. Canvas Display -->
+        <div class="flex justify-center">
+            <canvas id="compositor-canvas" width="500" height="500"></canvas>
+        </div>
+        
+        <!-- The download button has been removed -->
+
+    </div>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
