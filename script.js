@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Configuration for Backgrounds ---
     // The 'path' property uses relative URLs pointing to the images in the 'backgrounds' folder.
     const backgrounds = [
-        { id: 'snowflakes', name: 'Falling Snowflakes', path: './backgrounds/snowflakes.jpg' },
-        { id: 'fireplace', name: 'Cozy Fireplace', path: './backgrounds/fireplace.jpg' },
-        { id: 'tree', name: 'Christmas Tree Lights', path: './backgrounds/tree_lights.jpg' },
-        { id: 'abstract', name: 'Abstract Holiday Gold', path: './backgrounds/holiday_gold.jpg' }
+        { id: 'snowflakes', name: 'Falling Snowflakes', path: './IMG_3404.jpeg' },
+        { id: 'fireplace', name: 'Cozy Fireplace', path: './IMG_3403.jpeg' },
+        { id: 'tree', name: 'Christmas Tree Lights', path: './IMG_3405.jpeg' },
+        { id: 'abstract', name: 'Abstract Holiday Gold', path: './IMG_3408.jpeg' }
     ];
 
     // Function to display messages to the user
