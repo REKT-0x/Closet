@@ -3,7 +3,7 @@ body {
     font-family: 'Inter', sans-serif;
     /* Uses the generated site_background.jpg pattern */
     background-color: #3f51b5; /* Fallback: Deep Blue */
-    background-image: url('site_background.jpg');
+    background-image: url('IMG_3330.jpeg');
     background-repeat: repeat;
     color: #f3f4f6; /* Light gray text for contrast */
 }
